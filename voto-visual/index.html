@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Voto visual | PR3SSH</title>
+                <meta name="description" content="Visualiza una elección en la web">
+                <meta name="keywords" content="datavis, datacizz, data visualization, elections, open data">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/bootstrap.grid.min.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="./main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+               
+                <link rel="canonical" href="http://pr3ssh.net" />
+                <meta name="referrer" content="origin" />
+                
+                <meta property="og:site_name" content="PR3SSH" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="PR3SSH" />
+                <meta property="og:description" content="Hacker Cívico / Construyendo Contrapoder" />
+                <meta property="og:url" content="http://pr3ssh.net" />
+                <meta property="og:image" content="http://pr3ssh/net/images/me.jpg" />
+                
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="PR3SSH" />
+                <meta name="twitter:description" content="Hacker Cívico / Construyendo Contrapoder" />
+                <meta name="twitter:url" content="http://pr3ssh.net" />
+                <meta name="twitter:image:src" content="http://pr3ssh/net/images/me.jpg" />
+                
+                <script type="application/ld+json">
+                "@context": "http://schema.org",
+                "@type": "Website",
+                "publisher": "PR3SSH",
+                "url": "http://pr3ssh.net",
+                "image": "http://pr3ssh/net/images/me.jpg",
+                "description": "Hacker Cívico / Construyendo Contrapoder"
+                </script>
+
+</style>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+                                            <a href="/" class="logo"><strong>PR3SSH</strong> <span></span></a>
+                                            <!-- <nav> -->
+                                            <!--     <a href="#menu">Menu</a> -->
+                                            <!-- </nav> -->
+					</header>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Voto visual</h1>
+									</header>
+                                                                        <div class="row result">
+                                                                            <div id="graph-presentes" class="col-md-2 col-md-offset-2 box presentes text-center general-view"></div>
+                                                                            <div class="detail-view right">
+                                                                                <div class="col-md-2 box afavor text-center">
+                                                                                    <div id="graph-afavor"></div>
+                                                                                    <p><strong>200</strong><br>
+                                                                                    A favor
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="col-md-2 box encontra text-center">
+                                                                                    <div id="graph-encontra"></div>
+                                                                                    <p><strong>120</strong><br>
+                                                                                    En contra</p>
+                                                                                </div>
+                                                                                <div class="col-md-2 box abstenciones text-center">
+                                                                                    <div id="graph-abstenciones"></div>
+                                                                                    <p><strong>30</strong><br>
+                                                                                    Abstenciones</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://twitter.com/pr3ssh" class="icon alt fa-twitter" ><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/pr3ssh" class="icon alt fa-github" ><span class="label">GitHub</span></a></li>
+								<li><a href="https://medium.com/@pr3ssh" class="icon alt fa-medium" ><span class="label">Medium</span></a></li>
+								<li><a href="https://speakerdeck.com/pr3ssh" class="icon alt fa-object-group" ><span class="label">SpeakerDeck</span></a></li>
+							</ul>
+							<ul class="copyright">
+                                                            <li><i class="fa fa-creative-commons"></i> PR3SSH.NET</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/d3.v3.min.js"></script>
+			<script src="../assets/js/main.js"></script>
+			<script src="./vizz.js"></script>
+
+	</body>
+</html>
