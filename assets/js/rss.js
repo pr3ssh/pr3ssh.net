@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#rss').feeds({
         feeds: {
-            feed1: 'https://medium.com/feed/diario-de-un-hacker-civico',
+            feed1: 'http://diario.pr3ssh.net/feed',
         },
         entryTemplate: 'Template',
         max: 3,
