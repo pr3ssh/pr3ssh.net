@@ -121,7 +121,7 @@
                                                             <p>En este espacio pretendo compartir conocimientos, experiencias y reflexiones en torno a la tecnología y sus implicaciones en la vida real de las personas que las usamos/creamos/compramos/distribuímos. Todo desde el punto de vista de un humano.</p>
                                                             <ul id="rss" class="alt"></ul>
                                                             <ul class="actions">
-                                                                <li><a href="https://medium.com/diario-de-un-hacker-civico" class="button next">Accede al diario</a></li>
+                                                                <li><a href="http://diario.pr3ssh.net" class="button next register-event" title="Accede al diario" type="Enlaces externos">Accede al diario</a></li>
                                                             </ul>
 							</section>
 							<section class="split">
@@ -157,10 +157,11 @@
 					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="https://twitter.com/pr3ssh" class="icon alt fa-twitter" ><span class="label">Twitter</span></a></li>
-								<li><a href="https://github.com/pr3ssh" class="icon alt fa-github" ><span class="label">GitHub</span></a></li>
-								<li><a href="https://medium.com/@pr3ssh" class="icon alt fa-medium" ><span class="label">Medium</span></a></li>
-								<li><a href="https://speakerdeck.com/pr3ssh" class="icon alt fa-object-group" ><span class="label">SpeakerDeck</span></a></li>
+								<li><a href="https://twitter.com/pr3ssh" class="icon alt fa-twitter register-event" title="Twitter" type="Enlaces externos"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/pr3ssh" class="icon alt fa-github register-event" title="GitHub" type="Enlaces externos"><span class="label">GitHub</span></a></li>
+								<li><a href="https://medium.com/@pr3ssh" class="icon alt fa-medium register-event" title="Medium" type="Enlaces externos"><span class="label">Medium</span></a></li>
+								<li><a href="https://speakerdeck.com/pr3ssh" class="icon alt fa-object-group register-event" title="SpeakerDeck" type="Enlaces externos"><span class="label">SpeakerDeck</span></a></li>
+								<li><a href="#" class="icon alt fa-lightbulb-o register-event" title="CoderWall" type="Enlaces externos"><span class="label">CoderWall</span></a></li>
 							</ul>
 							<ul class="copyright">
                                                             <li><i class="fa fa-creative-commons"></i> PR3SSH.NET</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
@@ -194,6 +195,17 @@
                           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
                           ga('create', 'UA-75990858-1', 'auto');
                           ga('send', 'pageview');
+
+				$('a.register-event').click(function(event) {
+console.log(event);
+				  ga('send', 'event', {
+				    eventCategory: event.currentTarget.type,
+				    eventAction: 'click',
+				    eventLabel: event.currentTarget.title,
+				    transport: 'beacon'
+				  });
+				});
+
                         </script>
 
 	</body>
