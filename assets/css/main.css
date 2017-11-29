@@ -48,6 +48,10 @@
 		-webkit-text-size-adjust: none;
 	}
 
+        .spaced {
+            letter-spacing: 10px;
+        }
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -2786,27 +2790,27 @@
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #f00;
+                            background-color: #6fc3df;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #f33;
+                            background-color: #8d82c4;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #f66;
+                            background-color: #ec8d81;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #f00;
+                            background-color: #e7b788;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #f33;
+                            background-color: #8ea9e8;
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #f66;
+                            background-color: #87c5a4;
 			}
 
 		@media screen and (max-width: 1280px) {
